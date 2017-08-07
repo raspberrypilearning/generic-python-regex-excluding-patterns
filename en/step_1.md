@@ -1,19 +1,12 @@
-## Introduction
+- Sometimes you want to make substitutions but exclude certain characters when using **regex**.
 
-Add project description here. What will learners be making?
+- For instance you might want to replace all the characters that aren't vowels with underscores (`_`).
 
-### What you will make
+- By placing the character to ignore in square brackets and preceding them with the hat (`^`) character, the pattern becomes `[^aeiou]`.
 
-Add something here to showcase here, for example:
-
-<div class="scratch-preview">
-  <iframe allowtransparency="true" width="485" height="402" src="https://scratch.mit.edu/projects/embed/160619869/?autostart=false" frameborder="0"></iframe>
-</div>
-
-Add instructions here. These should explain either how the finished project will work, or explain how to interact with the content above.
-
-### What you will learn
-
-This project covers elements from the following strands of the [Raspberry Pi Digital Making Curriculum](http://rpf.io/curriculum):
-
-+ [Add curriculum strand/level description.](https://www.raspberrypi.org/curriculum/strand/level)
+	```python
+	import re
+	word = 'acetone'
+	word = re.sub(r'[^aeiou]', '_', word)
+	```
+- This gives a result of `'a_e_o_e'`
