@@ -1,7 +1,7 @@
 ---
-title: Excluding patterns from a regex substitution with Python
+title: Patronen uitsluiten van een regex-vervangingen met Python
 hero_image: images/banner.png
-description: Excluding patterns from regex substitutions
+description: Patronen uitsluiten van regex-vervangingen
 original_url:
 theme: red #possible values: blue, green, navy, orange, red, turquoise, violet, yellow
 duration: 1 #possible values: 1, 2 or 3
@@ -14,5 +14,5 @@ technologies: "python"
 site_areas:
 steps:
   - 
-    title: Introduction
+    title: Inleiding
 
