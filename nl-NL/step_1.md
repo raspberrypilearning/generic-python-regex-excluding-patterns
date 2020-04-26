@@ -1,10 +1,10 @@
-- Sometimes when using regex, you might want to make substitutions while excluding certain characters. For instance, you might want to replace all the characters in your string that aren't vowels with underscores (`_`).
+- Soms wil je bij het gebruikmaken van regex vervangingen terwijl je bepaalde tekens uitsluit. Je wilt bijvoorbeeld alle tekens in je tekenreeks die geen klinkers zijn, vervangen door onderstrepingstekens (`_`).
 
-- You can do this by placing the characters to ignore in square brackets and preceding them with the hat (`^`) character, so the pattern becomes `[^aeiou]`.
+- Je kunt dit doen door de te negeren tekens tussen vierkante haken te plaatsen en ze te laten voorafgaan door het hoed (`^`) -teken, zodat het patroon `[^aeiou]` wordt.
 
     ```python
     import re
-    word = 'acetone'
-    word = re.sub(r'[^aeiou]', '_', word)
+woord = 'aceton'
+woord = re.sub(r'[^aeiou]', '_', woord)
     ```
-- This will give you the result `'a_e_o_e'`.
+- Dit geeft je als resultaat `'a_e_o_e'`.
